@@ -8,7 +8,7 @@
 
         <title> Witaj na mojej stronie domowej </title>
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')" }>
 
     </head>
 
@@ -20,7 +20,7 @@
 
 
 
-<img src ="DSC_3707.JPG" alt="ja i las" title="ja w lesie" width="200" height="150">
+<img src ="{{url_for('static',filename='DSC_3707.JPG')}}" width="200" height="150">
         {% block content %}
         {% endblock %}
     </body>
