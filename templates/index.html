@@ -17,8 +17,8 @@
     <body>
 
 <h1>Witaj na mojej stronie domowej</h1>
-
-
+    {% block what % }
+    {% endblock %}
 
 <img src ="{{url_for('static',filename='DSC_3707.JPG')}}" width="200" height="150">
         {% block content %}
