@@ -14,7 +14,7 @@ def contact():
    elif request.method == 'POST':
        print("We received POST")
        print(request.form)
-       return redirect("/")
+       return redirect("/me.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
